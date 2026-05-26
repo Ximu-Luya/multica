@@ -1,17 +1,17 @@
 {
   "page": {
-    "title": "小队",
-    "new_button": "新建小队",
-    "empty_no_squads": "还没有小队，创建一个开始吧。",
-    "empty_no_match": "没有匹配筛选条件的小队。"
+    "title": "数字部门",
+    "new_button": "新建数字部门",
+    "empty_no_squads": "还没有数字部门，创建一个开始吧。",
+    "empty_no_match": "没有匹配筛选条件的数字部门。"
   },
   "inspector": {
     "details_section": "详情",
     "archive_button": "归档"
   },
   "archive_dialog": {
-    "title": "归档这个小队？",
-    "description": "“{{name}}” 将被归档，该小队当前承接的 issue 会转交给小队负责人。此操作无法撤销，如需恢复路由请新建小队。",
+    "title": "归档这个数字部门？",
+    "description": ""{{name}}" 将被归档，该数字部门当前承接的 issue 会转交给数字部门负责人。此操作无法撤销，如需恢复路由请新建数字部门。",
     "cancel": "取消",
     "confirm": "归档",
     "archiving": "归档中…"
@@ -21,7 +21,7 @@
   },
   "add_member_dialog": {
     "title": "添加成员",
-    "description": "添加工作区成员或智能体到这个小队。",
+    "description": "添加工作区成员或智能体到这个数字部门。",
     "label_member": "成员",
     "label_role": "角色",
     "label_optional": "（可选）",
@@ -41,14 +41,14 @@
   },
   "members_tab": {
     "section_title": "成员",
-    "section_count_one": "该小队有 {{count}} 名成员",
-    "section_count_other": "该小队有 {{count}} 名成员",
+    "section_count_one": "该数字部门有 {{count}} 名成员",
+    "section_count_other": "该数字部门有 {{count}} 名成员",
     "add_member_button": "添加成员",
     "create_agent_button": "创建智能体",
     "leader_chip": "负责人",
     "view_agent_tooltip": "打开智能体详情",
-    "make_leader_tooltip": "设为小队负责人",
-    "remove_member_tooltip": "从小队移除",
+    "make_leader_tooltip": "设为数字部门负责人",
+    "remove_member_tooltip": "从数字部门移除",
     "status_working": "工作中",
     "status_idle": "空闲",
     "status_offline": "离线",
@@ -58,7 +58,7 @@
     "last_active_label": "最近活动 {{time}}"
   },
   "profile_card": {
-    "unavailable": "小队不可用",
+    "unavailable": "数字部门不可用",
     "detail_link": "详情 →",
     "archived": "已归档",
     "member_count_one": "{{count}} 名成员",
@@ -68,7 +68,7 @@
     "more_members_other": "还有 {{count}} 人"
   },
   "instructions_tab": {
-    "description": "小队指引会在 Leader 智能体处理分配给该小队的 issue 时注入到它的 prompt 中。可用来给 Leader 提供贯穿全队的指导、协作规范，或每次任务都应遵循的上下文。",
+    "description": "数字部门指引会在 Leader 智能体处理分配给该数字部门的 issue 时注入到它的 prompt 中。可用来给 Leader 提供贯穿全部门的指导、协作规范，或每次任务都应遵循的上下文。",
     "unsaved_changes": "有未保存的修改",
     "save_button": "保存"
   }
