@@ -5,7 +5,7 @@ description: A workspace is the self-contained space where a group collaborates 
 
 import { Callout } from "fumadocs-ui/components/callout";
 
-A workspace is **the self-contained space where a group collaborates in Multica** — every [issue](/issues), [member](/members-roles), [comment](/comments), and [agent](/agents) belongs to one. The issue list, member roster, and agent configuration you see after logging in are all scoped to the current workspace; **switching workspaces replaces the entire view**.
+A workspace is **the self-contained space where a group collaborates in Multica** — every [task](/issues), [member](/members-roles), [comment](/comments), and [digital employee](/agents) belongs to one. The task list, member roster, and digital employee configuration you see after logging in are all scoped to the current workspace; **switching workspaces replaces the entire view**.
 
 ## Creating a workspace
 
@@ -13,10 +13,10 @@ Three things get decided when you create a workspace:
 
 - **Workspace name** — the display name members see. Spaces and non-ASCII characters are allowed. You can change it later.
 - **Slug** — the string used in the workspace URL. Lowercase letters and digits only (joined with `-`). **It cannot be changed after creation**, so pick carefully. If the slug is taken or hits a system-reserved word, the create screen will ask you to choose another.
-- **Issue prefix** — the prefix for every issue number in the workspace (the `MUL` in `MUL-123`). Uppercase letters and digits, up to 10 characters.
+- **Task prefix** — the prefix for every task number in the workspace (the `MUL` in `MUL-123`). Uppercase letters and digits, up to 10 characters.
 
 <Callout type="warning">
-**Avoid changing the issue prefix.** Issue numbers are rendered with the current prefix — change it and `MUL-5` instantly becomes `NEW-5`. Every external link, Slack mention, and historical reference in comments breaks against the old number. Treat the issue prefix as "set at creation, never touched."
+**Avoid changing the task prefix.** Task numbers are rendered with the current prefix — change it and `MUL-5` instantly becomes `NEW-5`. Every external link, Slack mention, and historical reference in comments breaks against the old number. Treat the task prefix as "set at creation, never touched."
 </Callout>
 
 You can create a workspace from the web UI or from the command line:
@@ -25,13 +25,13 @@ You can create a workspace from the web UI or from the command line:
 multica workspace create
 ```
 
-## Issue numbers
+## Task numbers
 
-Every issue created in a workspace is automatically assigned a number in the format `<prefix>-<digits>` — `MUL-1`, `MUL-2`, `MUL-3`. A few properties:
+Every task created in a workspace is automatically assigned a number in the format `<prefix>-<digits>` — `MUL-1`, `MUL-2`, `MUL-3`. A few properties:
 
 - **Sequential and unique within a workspace** — each workspace keeps its own counter; workspaces don't interfere with each other.
-- **Not manually assignable** — when you create an issue you only supply a title; the number is assigned by the system.
-- **Never reclaimed on delete** — delete `MUL-5` and the next new issue is `MUL-6`, not `MUL-5`.
+- **Not manually assignable** — when you create a task you only supply a title; the number is assigned by the system.
+- **Never reclaimed on delete** — delete `MUL-5` and the next new task is `MUL-6`, not `MUL-5`.
 
 ## Deleting a workspace
 
@@ -40,10 +40,10 @@ Only a workspace owner can delete the entire workspace. Deletion is **irreversib
 <Callout type="warning">
 Deleting a workspace wipes the following all at once:
 
-- Every issue, project, comment, and reaction
+- Every task, project, comment, and reaction
 - Every attachment
 - Every membership and pending invitation
-- Every agent configuration along with its task history
+- Every digital employee configuration along with its task history
 
 **Data cannot be recovered.** Export anything you need to keep before deleting.
 </Callout>
@@ -53,4 +53,4 @@ If you're the last owner of a workspace and want to walk away from it, transfer 
 ## Next
 
 - [Members and roles](/members-roles) — how to add people to a workspace, and what each of the three roles can do
-- [Issues and projects](/issues) — the core work objects inside a workspace
+- [Tasks and projects](/issues) — the core work objects inside a workspace

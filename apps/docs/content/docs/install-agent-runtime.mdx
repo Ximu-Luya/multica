@@ -1,5 +1,5 @@
 ---
-title: Install an agent runtime
+title: Install a digital employee runtime
 description: Multica drives whichever AI coding tools you have on your machine. This page shows you how to install each of the 11 supported tools so the daemon can detect them.
 ---
 
@@ -37,7 +37,7 @@ Listed roughly from most to least common. Pick whichever ones you already have c
 
 ### Claude Code (Anthropic)
 
-The most complete integration. Session resumption works, MCP works, and it's the **only one of the 11 that actually consumes the `mcp_config` field** on agents (see the [matrix](/providers#mcp-configuration-only-claude-code-actually-reads-it)).
+The most complete integration. Session resumption works, MCP works, and it's the **only one of the 11 that actually consumes the `mcp_config` field** on digital employees (see the [matrix](/providers#mcp-configuration-only-claude-code-actually-reads-it)).
 
 | | |
 |---|---|
@@ -129,7 +129,7 @@ ACP-protocol agent (shares the transport with Kimi). Session resumption works. T
 
 ### OpenClaw
 
-Open-source CLI agent orchestrator. **Model is bound at the agent layer** (`openclaw agents add --model`) — it can't be overridden per task, and you can't pass `--model` or `--system-prompt` from Multica.
+Open-source CLI agent orchestrator. **Model is bound at the digital employee layer** (`openclaw agents add --model`) — it can't be overridden per task, and you can't pass `--model` or `--system-prompt` from Multica.
 
 | | |
 |---|---|
@@ -166,4 +166,4 @@ For broader symptoms, see the [Troubleshooting guide](/troubleshooting).
 
 - [Daemon and runtimes](/daemon-runtimes) — how detection, heartbeats, and offline handling work
 - [AI coding tools matrix](/providers) — capability differences once a tool is connected
-- [Creating and configuring agents](/agents-create) — pick a tool for your agent and start running tasks
+- [Creating and configuring digital employees](/agents-create) — pick a tool for your digital employee and start running tasks

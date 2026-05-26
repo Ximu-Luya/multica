@@ -7,7 +7,7 @@ import { Callout } from "fumadocs-ui/components/callout";
 
 Multica ships with built-in support for **11 AI coding tools**. They all implement the same interface — queue, dispatch, execute, return results — so you can drive any of them from the same Multica board. **But the capability details diverge significantly**: whether session resumption actually works, whether MCP is supported, where skill files live, how models are selected. This page is the full matrix.
 
-For guidance on picking a tool when creating an agent, see [Creating and configuring agents](/agents-create).
+For guidance on picking a tool when creating a digital employee, see [Creating and configuring digital employees](/agents-create).
 
 ## Capability matrix
 
@@ -81,14 +81,14 @@ The session resumption mechanism is covered in [Tasks](/tasks#can-a-task-continu
 | ⚠️ Code exists but unreachable | Codex, Cursor | Resume paths exist in the code but aren't actually reached (Codex silently falls back; Cursor doesn't return session id) — **treat as unsupported** |
 | ❌ None | Gemini | The CLI has no resume mechanism |
 
-**For your decision**: if your workflow needs agents to preserve context across tasks (failure retries, manual reruns, conversational iteration), pick only from the ✅ row.
+**For your decision**: if your workflow needs digital employees to preserve context across tasks (failure retries, manual reruns, conversational iteration), pick only from the ✅ row.
 
 ## MCP configuration: only Claude Code actually reads it
 
 **Of the 11 tools, only Claude Code actually consumes `mcp_config`**. The other 10 accept the field but **completely ignore it** — no error, no warning, the config just has no effect.
 
 <Callout type="warning">
-If you set `mcp_config` in an agent configuration but pick a tool other than Claude Code, your MCP servers have **no effect** on that agent. MCP integration currently covers Claude Code only.
+If you set `mcp_config` in a digital employee configuration but pick a tool other than Claude Code, your MCP servers have **no effect** on that digital employee. MCP integration currently covers Claude Code only.
 </Callout>
 
 ## Where skill files go
@@ -115,6 +115,6 @@ For creating and using skills, see [Skills](/skills).
 
 ## Next
 
-- [Creating and configuring agents](/agents-create) — pick a tool for your agent
+- [Creating and configuring digital employees](/agents-create) — pick a tool for your digital employee
 - [Tasks](/tasks) — task lifecycle and session-resumption mechanics
 - [Daemon and runtimes](/daemon-runtimes) — where the tools run and how they connect to Multica
