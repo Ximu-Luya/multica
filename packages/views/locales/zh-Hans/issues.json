@@ -27,8 +27,8 @@
     "all_description": "工作区内的全部任务",
     "members_label": "成员",
     "members_description": "分配给成员的任务",
-    "agents_label": "智能体",
-    "agents_description": "分配给智能体的任务"
+    "agents_label": "数字员工",
+    "agents_description": "分配给数字员工的任务"
   },
   "filters": {
     "tooltip": "筛选",
@@ -44,7 +44,7 @@
     "section_project": "项目",
     "section_label": "标签",
     "members_group": "成员",
-    "agents_group": "智能体",
+    "agents_group": "数字员工",
     "squads_group": "数字部门",
     "issue_count_other": "{{count}} 个任务",
     "reset": "重置全部筛选"
@@ -95,11 +95,11 @@
     "scope": {
       "assigned": {
         "label": "已分配",
-        "description": "分配给这个成员或智能体的任务"
+        "description": "分配给这个成员或数字员工的任务"
       },
       "created": {
         "label": "已创建",
-        "description": "这个成员或智能体创建的任务"
+        "description": "这个成员或数字员工创建的任务"
       }
     },
     "empty": {
@@ -190,7 +190,7 @@
     "no_subscribers_results": "未找到结果",
     "change_subscribers_placeholder": "更改订阅者...",
     "members_group": "成员",
-    "agents_group": "智能体",
+    "agents_group": "数字员工",
     "mark_done_tooltip": "标记为已完成",
     "archive_tooltip": "归档",
     "pin_tooltip": "固定到侧边栏",
@@ -276,22 +276,22 @@
     "collapse_tooltip": "收起"
   },
   "agent_activity": {
-    "hover_header_other": "{{count}} 个智能体正在工作",
+    "hover_header_other": "{{count}} 个数字员工正在工作",
     "status_running": "正在工作",
     "status_queued": "排队中",
     "chip_label": "工作中",
-    "empty_hover": "当前没有智能体在工作",
-    "filter_active_label": "正在查看工作中的智能体"
+    "empty_hover": "当前没有数字员工在工作",
+    "filter_active_label": "正在查看工作中的数字员工"
   },
   "agent_live": {
     "is_working": "{{name}} 正在处理",
     "is_queued": "{{name}} 排队中",
     "queued_elapsed_prefix": "已排队 {{elapsed}}",
-    "fallback_name": "智能体",
+    "fallback_name": "数字员工",
     "tool_count_other": "{{count}} 次工具调用",
     "transcript_button": "查看记录",
     "stop_button": "停止",
-    "stop_tooltip": "停止智能体",
+    "stop_tooltip": "停止数字员工",
     "cancel_failed": "取消 task 失败"
   },
   "execution_log": {
@@ -377,7 +377,7 @@
       "trigger_unassigned": "未分配",
       "search_placeholder": "分配给...",
       "members_group": "成员",
-      "agents_group": "智能体",
+      "agents_group": "数字员工",
       "squads_group": "小队"
     },
     "start_date": {
@@ -421,12 +421,12 @@
     "delete_failed": "删除标签失败"
   },
   "backlog_hint": {
-    "title": "智能体在 backlog 状态下暂停",
-    "description": "这个任务处于待规划状态，被分配的智能体会等待。准备启动时把它移到 todo。",
+    "title": "数字员工在 backlog 状态下暂停",
+    "description": "这个任务处于待规划状态，被分配的数字员工会等待。准备启动时把它移到 todo。",
     "row_backlog_label": "Backlog",
-    "row_backlog_hint": "智能体保持暂停",
+    "row_backlog_hint": "数字员工保持暂停",
     "row_todo_label": "Todo",
-    "row_todo_hint": "启动智能体",
+    "row_todo_hint": "启动数字员工",
     "dont_show_again": "不再提示",
     "keep_in_backlog": "保持在 Backlog",
     "move_to_todo": "移到 Todo"
